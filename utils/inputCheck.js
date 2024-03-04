@@ -1,7 +1,7 @@
 const checkInputs = (user_name, password) => {
-    if (user_name == "") {
+    if (user_name == '') {
         alert('Username');
-    } if (password == "") {
+    } if (password == '') {
         alert('Password');
     }
 }

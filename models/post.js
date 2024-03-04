@@ -10,7 +10,7 @@ Post.init (
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
-        },
+          },
         title: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -22,7 +22,7 @@ Post.init (
             type: DataTypes.TEXT,
             allowNull: false,
             validate: {
-                // Ensure comments are at least 6 characters long, but no longer than 1,500
+                // Ensures comments are at least 6 characters long, but no longer than 1,500
                 len: [5, 1501]
             }
         },
@@ -31,9 +31,9 @@ Post.init (
             allowNull: false,
             references: {
                 model: 'user',
-                key: 'id'
+                key:'id'
             },
-        },
+        },  
     },
     {
         sequelize,

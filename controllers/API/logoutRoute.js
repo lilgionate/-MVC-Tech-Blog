@@ -3,14 +3,14 @@ const { User } = require('../../models');
 
 router.post('/', (req, res) => {
     if (req.session.logged_in) {
-
-        // Removes all session data on logout
-        req.session.destroy(() => {
-            res.status(204).end();
-        });
+      
+      // Removes all session data on logout
+      req.session.destroy(() => {
+        res.status(204).end();
+      });
     } else {
-        res.status(404).end();
+      res.status(404).end();
     }
-});
-
-module.exports = router;
+  });
+  
+  module.exports = router;

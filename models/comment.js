@@ -10,29 +10,29 @@ Comment.init (
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
-        },
+          },
         contents: {
             type: DataTypes.TEXT,
             allowNull: false,
             validate: {
                 // Ensures comments are at least 6 characters long, but no longer than 349
-                len: [5, 350], 
+                len: [5, 350],
             },
         },
         user_id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: false, 
             references: {
                 model: 'user',
-                key: 'id',
+                key: 'id'
             },
         },
         post_id: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: false, 
             references: {
                 model: 'post',
-                key: 'id',
+                key: 'id'
             },
         },
     },

@@ -1,14 +1,14 @@
 const logout = async (event) => {
     event.preventDefault();
     const response = await fetch('/api/logout', {
-        method: "POST", 
+        method: 'POST',
         headers: {'Content-Type': 'application/json'},
     });
-
-    if (response.ok) {
+    
+    if(response.ok) {
         document.location.replace('/login');
     } else {
-        alert('something has gone wrong')
+        alert('Something has gone wrong')
     }
 }
 

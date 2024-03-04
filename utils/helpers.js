@@ -1,5 +1,7 @@
-function FormDate(dt) {
+function formDate(dt) {
     return `${new Date(dt).getMonth() + 1}/${new Date(dt).getDate()}/${new Date(dt).getFullYear()}`
 }
 
-module.exports = { FormDate }
+module.exports = { 
+   formDate
+}
